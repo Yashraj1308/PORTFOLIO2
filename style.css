@@ -1,0 +1,261 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#hero-section{
+    width:100%;
+    height:100%;
+    background-image:url('./backgroundimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 5;
+}
+#hero-section:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 7;
+    z-index: 11;
+}
+#h1{
+    position: absolute;
+    top: 10px;
+    margin-top: 200px;
+    margin-left: 380px;
+    color: wheat;
+    z-index: 12;
+}
+#h2{
+    position:absolute;
+    top: 32px;
+    margin-top: 240px;
+    margin-left: 380px;
+    color: wheat;
+    z-index: 12;
+}
+#h3{
+    position:absolute;
+    top: 54px;
+    margin-top: 280px;
+    margin-left: 380px;
+    color: wheat;
+    z-index: 12;
+}
+#h1,#h2,#h3{ 
+    font-size: 45px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+.btn{
+    position:absolute;
+    width: 280px;
+    height: 50px;
+    z-index: 12;
+    margin-top: 405px;
+    margin-left: 380px;
+    background-color: transparent;
+    border: 1px solid green;
+    font-size: 32px;
+}
+.btn:hover{
+    background-color: green;
+    color: red;
+}
+.para{
+    position:absolute;
+    margin-top: 470px;
+    margin-left: 380px;
+     z-index: 12;
+     color: white;
+     font-family: sans-serif;
+     font-size: 28px;
+}
+#services{
+    width: 100vw;
+    height: 120vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.top{
+    width: 100vw;
+    height: 30vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom{
+    width: 100vw;
+    height: 90vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.left{
+    width: 50vw;
+    height:100% ;
+    flex-direction: column;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 60px;
+}
+.right{
+    width: 50vw;
+    height:100% ;
+    flex-direction: column;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 60px;
+}
+.heading{
+    color: black;
+    font-size: 42px;
+    font-family: sans-serif;
+}
+.para2{
+    font-family: sans-serif;
+    margin-top: 12px;
+}
+.heading span{
+    color: green;
+}
+.box{
+    width: 45vw;
+    height:32vh ;
+    background-color: brown;
+    border-radius: 12px;
+    position:relative;
+}
+.box:after{
+    content: '';
+    background-color:black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 2;
+}
+.placeholder{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    gap: 12px;
+}
+.bheading{
+    color: white;
+    font-family: sans-serif;
+    font-size: 32px;
+    z-index: 3;
+}
+.image{
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+}
+.bpara{
+    font-family: sans-serif;
+    font-size: 17px;
+    z-index: 3;
+}
+.box1,.box2,.box3,.box4{
+    background-image: url(./html.jpg);
+    background-size: cover;
+    background-position:top center ;
+    background-repeat: no-repeat;
+}
+#recent-projects{
+    width: 100vw;
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 90px;
+}
+.recent-h{
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.recent-h span{
+    color: red;
+}
+.project{
+    width: 90vw;
+    height: 85vh;
+    border-radius: 15px;
+    background-image: url(./html.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+}
+.project :hover{
+    border: 3px solid transparent;
+    transform: scaleZ(1.9);
+    z-index: 3;
+}
+.project:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.project-placeholder{
+    width: 100%;
+    height: 30%;
+    background-color:tan ;
+    position: absolute;
+    z-index: 12;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+.project-h{
+    font-size: 42px;
+    font-family: sans-serif;
+    color: white;
+}
+.project-p{
+    font-size: 32px;
+    font-family: sans-serif;
+    color: white;
+}
+#about-me{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 120px;
+    position: relative;
+}
+.profile{
+    width: 16vw;
+    height: 40vh;
+    position: relative;
+}
+.img-ctn{
+    width: 16vw;
+    height: 40vh;
+    border-radius: 3px solid red;
+}
